@@ -5,9 +5,9 @@ import { scholarships } from "./scholarships";
 import { generateStrategyPlan } from "./aiAdvisor";
 
 describe("Deterministic Eligibility Engine", () => {
-  const rahulProfile: StudentProfile = {
+  const sampleProfile: StudentProfile = {
     ...emptyProfile(),
-    name: "Rahul Sharma",
+    name: "Alex Chen",
     nationality: "india",
     currentLevel: "bachelors",
     yearOfStudy: 3,
@@ -31,7 +31,7 @@ describe("Deterministic Eligibility Engine", () => {
     expect(mitacs).toBeDefined();
 
     if (mitacs) {
-      const evaluation = evaluate(rahulProfile, mitacs);
+      const evaluation = evaluate(sampleProfile, mitacs);
       expect(evaluation.status).toBe("eligible");
       expect(evaluation.failed).toBe(0);
       expect(evaluation.passed).toBeGreaterThan(0);
@@ -44,7 +44,7 @@ describe("Deterministic Eligibility Engine", () => {
     expect(pearson).toBeDefined();
 
     if (pearson) {
-      const evaluation = evaluate(rahulProfile, pearson);
+      const evaluation = evaluate(sampleProfile, pearson);
       expect(evaluation.status).toBe("ineligible");
       expect(evaluation.failed).toBeGreaterThan(0);
       const levelCheck = evaluation.checks.find(
@@ -56,7 +56,7 @@ describe("Deterministic Eligibility Engine", () => {
 
   it("fails when GPA is below the requirement threshold", () => {
     const lowGpaProfile: StudentProfile = {
-      ...rahulProfile,
+      ...sampleProfile,
       gpa: 5.0,
       gpaScale: 10,
     };
@@ -78,17 +78,17 @@ describe("Deterministic Eligibility Engine", () => {
     expect(daad).toBeDefined();
 
     if (daad) {
-      const evaluation = evaluate(rahulProfile, daad);
-      // Rahul is in year 3 of 4, so final year or graduated fails for the 2026 intake
+      const evaluation = evaluate(sampleProfile, daad);
+      // Student is in year 3 of 4, so final year or graduated fails for the current intake
       expect(evaluation.status).toBe("ineligible");
     }
   });
 });
 
 describe("AI Strategy Advisor Engine", () => {
-  const rahulProfile: StudentProfile = {
+  const sampleProfile: StudentProfile = {
     ...emptyProfile(),
-    name: "Rahul Sharma",
+    name: "Alex Chen",
     nationality: "india",
     currentLevel: "bachelors",
     yearOfStudy: 3,
@@ -106,8 +106,8 @@ describe("AI Strategy Advisor Engine", () => {
     const daad = scholarships.find((s) => s.id === "daad-study-scholarship")!;
     expect(daad).toBeDefined();
 
-    const evaluation = evaluate(rahulProfile, daad);
-    const plan = generateStrategyPlan(rahulProfile, daad, evaluation);
+    const evaluation = evaluate(sampleProfile, daad);
+    const plan = generateStrategyPlan(sampleProfile, daad, evaluation);
 
     expect(plan.scholarshipName).toBe(daad.name);
     expect(plan.diagnosis).toBeDefined();

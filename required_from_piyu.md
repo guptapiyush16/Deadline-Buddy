@@ -60,8 +60,8 @@ Then open your browser at:
 1. Open `http://localhost:3000`.
 2. Notice the app starts **clean and pristine on Step 1 (Upload Documents)**.
 3. Click the button:
-   **`⚡ Load Rahul's Sample Documents (1-Click Demo)`**
-   *(This immediately loads Rahul Sharma's Resume and Semester 5 Transcript).*
+   **`⚡ Load Sample Student Documents (1-Click Demo)`**
+   *(This immediately loads sample Resume and Semester 5 Transcript).*
 4. Click **"Proceed to Profile Verification →"** to inspect the extracted attributes (CGPA 8.4/10, 3rd year B.Tech, skills, hackathon achievements).
 5. Edit any field (e.g., change Year from 3 to 4, or change GPA) and notice how the confidence meter and eligibility re-evaluate!
 6. Select a destination country (e.g. **Canada** or **Germany** or **USA**).

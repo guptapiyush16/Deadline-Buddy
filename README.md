@@ -12,18 +12,18 @@
 
 ---
 
-## 📖 The Story: Building for My Friend Rahul
+## 📖 The Story: Building for a Friend
 
-My friend **Rahul Sharma** is a 3rd-year Computer Science undergraduate at NIT Karnataka, Surathkal in India. Like thousands of ambitious students worldwide, his dream is to pursue a Master's degree abroad in AI and Distributed Systems.
+My close friend is a 3rd-year Computer Science undergraduate at NIT Karnataka, Surathkal in India. Like thousands of ambitious students worldwide, their dream is to pursue a Master's degree abroad in AI and Distributed Systems.
 
-A few weeks ago, I watched him spend an entire weekend buried under dozens of open browser tabs: **DAAD** in Germany, **EduCanada**, **Fulbright** in the US, **Chevening** and **Commonwealth** in the UK. Each scholarship program had 40- to 80-page PDF guidelines filled with dense institutional jargon:
+A few weeks ago, I watched them spend an entire weekend buried under dozens of open browser tabs: **DAAD** in Germany, **EduCanada**, **Fulbright** in the US, **Chevening** and **Commonwealth** in the UK. Each scholarship program had 40- to 80-page PDF guidelines filled with dense institutional jargon:
 - *"Does a 4-year Indian B.Tech degree count as final-year standing right now?"*
 - *"Does an 8.4 / 10 CGPA satisfy the 'first-class honours or 2:1 equivalent' threshold?"*
 - *"Does a national hackathon finalist certificate meet 'demonstrated community leadership'?"*
 
-Existing scholarship portals were useless: they either served as lead-generation farms or slapped an opaque *"87% Match"* badge on a card without explaining **why** he qualified. The alternative—spending 20 hours drafting an essay only to be rejected over a technical disqualifier on page 52—was heartbreaking.
+Existing scholarship portals were useless: they either served as lead-generation farms or slapped an opaque *"87% Match"* badge on a card without explaining **why** they qualified. The alternative—spending 20 hours drafting an essay only to be rejected over a technical disqualifier on page 52—was heartbreaking.
 
-**Deadline Buddy was built for Rahul.**
+**Deadline Buddy was built for my friend and ambitious students worldwide.**
 
 ---
 
@@ -31,7 +31,7 @@ Existing scholarship portals were useless: they either served as lead-generation
 
 Deadline Buddy transforms scholarship discovery into a transparent, stress-free 5-step loop:
 
-1. **📄 Document Intake:** Drag-and-drop unofficial transcripts, resumes, or certificates (PDF, DOCX, TXT). *(For reviewers: a 1-click `⚡ Load Rahul's Sample Documents` button is included on Step 1).*
+1. **📄 Document Intake:** Drag-and-drop unofficial transcripts, resumes, or certificates (PDF, DOCX, TXT). *(For reviewers: a 1-click `⚡ Load Sample Student Documents` button is included on Step 1).*
 2. **👤 Structured Profile Verification:** The system extracts key attributes (GPA, current year of study, program length, graduation year, degrees, skills, achievements) into an editable profile with supporting document evidence quotes.
 3. **🌍 Destination Country Selection:** Select a target country (USA, Canada, UK, Germany, Australia, Netherlands, Singapore, Japan) with regional guides, currencies, and official portal links.
 4. **⚖️ Deterministic Eligibility Matching:** Pure code evaluates published criteria against the student's profile, categorizing each award into **Eligible (✓)**, **Needs Verification (🟡)**, or **Ineligible (✕)**.
@@ -122,8 +122,8 @@ npm run dev
 Open **`http://localhost:3000`** in your browser.
 
 ### 3. Quick 1-Click Demo
-1. On Step 1 (Upload Documents), click the **`⚡ Load Rahul's Sample Documents`** button.
-2. The system loads Rahul's sample Resume and NITK Semester 5 Transcript.
+1. On Step 1 (Upload Documents), click the **`⚡ Load Sample Student Documents`** button.
+2. The system loads realistic sample documents (Resume and NITK Semester 5 Transcript).
 3. Click **`Proceed to Profile Verification →`** to review extracted credentials.
 4. Click **`Explore Target Destinations →`** and choose a country (e.g., Canada, Germany, UK).
 5. Review the categorized scholarship cards. Click any card to open the **"Why?" Evidence Drawer** and test the **AI Strategy Advisor**!
@@ -216,7 +216,7 @@ If you prefer full-stack containerized hosting:
 │   ├── scholarships.ts         # 26 verified scholarships across 8 global destinations
 │   ├── requirements.ts         # Discriminated union schemas for scholarship criteria
 │   ├── heuristics.ts           # Local AST document & evidence extractor
-│   ├── sampleData.ts           # Realistic sample documents for Rahul Sharma
+│   ├── sampleData.ts           # Realistic sample documents for demo testing
 │   └── profile.ts              # Zod schemas for student profiles and evidence quotes
 ├── server/                     # Optional Express & tRPC Backend Services
 ├── Decisions.md                # Architectural Decision Record (logged per project rules)
@@ -229,4 +229,4 @@ If you prefer full-stack containerized hosting:
 
 ## 📜 License
 
-Distributed under the **MIT License**. See `LICENSE` for details. Built with ❤️ for Rahul and students everywhere.
+Distributed under the **MIT License**. See `LICENSE` for details. Built with ❤️ for ambitious students navigating scholarship deadlines everywhere.

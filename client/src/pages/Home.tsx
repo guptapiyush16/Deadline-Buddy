@@ -395,13 +395,12 @@ export default function Home() {
             <div className="brand-mark" aria-hidden="true">
               <span />
             </div>
-            <span>duewise</span>
+            <span>deadline buddy</span>
           </div>
 
           <div className="topbar-context">
             <span className="context-dot" /> Hacktoberfest 2026{" "}
-            <span className="context-divider">/</span> Build for a Friend:{" "}
-            <strong>Rahul Sharma</strong>
+            <span className="context-divider">/</span> Build for a Friend
           </div>
 
           <div className="topbar-actions">
@@ -437,9 +436,9 @@ export default function Home() {
 
             <div className="user-chip">
               <div className="avatar">
-                {profile.name ? profile.name.slice(0, 2).toUpperCase() : "RS"}
+                {profile.name ? profile.name.slice(0, 2).toUpperCase() : "DB"}
               </div>
-              <span>{profile.name || "Rahul S."}</span>
+              <span>{profile.name || "Candidate"}</span>
             </div>
           </div>
         </header>
@@ -573,8 +572,8 @@ export default function Home() {
                       Testing the Hacktoberfest Demo?
                     </span>
                     <span style={{ fontSize: 11, color: "#8e867d" }}>
-                      Load sample documents modeled for Rahul (3rd-year CS,
-                      CGPA 8.4/10).
+                      Load sample documents modeled for an aspiring 3rd-year CS student
+                      (CGPA 8.4/10).
                     </span>
                   </div>
                   <button
@@ -583,7 +582,7 @@ export default function Home() {
                     disabled={isParsing}
                   >
                     <Sparkles size={14} color="#f46b45" />
-                    <span>Load Rahul's Sample Documents</span>
+                    <span>Load Sample Student Documents</span>
                     <span className="demo-tag">1-Click</span>
                   </button>
                 </div>
@@ -1868,7 +1867,7 @@ export default function Home() {
                 <p style={{ fontSize: 11, color: "#8a837a", margin: 0 }}>
                   Click to generate an open-AI strategic action plan: diagnose
                   exact gap blockers, calculate timeline feasibility, and recommend
-                  practical steps for Rahul.
+                  practical next steps for your profile.
                 </p>
               )}
 

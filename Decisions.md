@@ -46,14 +46,14 @@ This document records the key architectural, technical, and UX design decisions 
 
 ## 5. 5-Step Guided Product Loop with 1-Click Friend Demo
 - **Decision:** Structure the user experience into 5 clear, navigable steps:
-  1. Document Intake (interactive dropzone + 1-click Rahul demo load)
+  1. Document Intake (interactive dropzone + 1-click sample demo load)
   2. Extracted Student Profile Review & Live Editor
   3. Destination Selection (8 countries)
   4. Personalized Opportunity Shortlist with live filtering
   5. Interactive "Why?" Evidence Drawer & Nearest-Deadline Tracker
 - **Reasoning:**
   - Improves product loop clarity and makes live demos effortless.
-  - Judges can test the entire workflow in 5 seconds by clicking the "Load Rahul's Sample Documents" button without needing to find or create fake PDF files.
+  - Judges can test the entire workflow in 5 seconds by clicking the "Load Sample Student Documents" button without needing to find or create fake PDF files.
   - Editing any profile attribute (e.g., GPA or Year of Study) immediately triggers a live re-evaluation across all 26 scholarships.
 
 ---
@@ -95,7 +95,7 @@ This document records the key architectural, technical, and UX design decisions 
 - **Decision:** Remove all preloaded profile and document data from the initial application state. The app starts cleanly on Step 1 (Upload Documents) with zero residual data.
 - **Reasoning:**
   - For competition judging, users must experience the onboarding flow from a fresh perspective.
-  - Reviewers can either drag-and-drop their own transcripts or click the prominent `⚡ Load Rahul's Sample Documents` button for an immediate 1-click test drive.
+  - Reviewers can either drag-and-drop their own transcripts or click the prominent `⚡ Load Sample Student Documents` button for an immediate 1-click test drive.
   - Avoids confusion between demonstration data and real student input.
 
 ---

@@ -1,6 +1,6 @@
 # Deadline Buddy MVP Outcomes
 
-- [x] **Document intake and editable profile:** Provided a clear desktop upload flow for PDF/DOCX/TXT files, interactive dropzone, 1-click Rahul sample document loader, document chip list with sizes, and an editable student profile form (Name, Degree, GPA, Scale, Year of Study, Graduation Year, Skills, Achievements) with live profile completeness confidence meter.
+- [x] **Document intake and editable profile:** Provided a clear desktop upload flow for PDF/DOCX/TXT files, interactive dropzone, 1-click sample document loader, document chip list with sizes, and an editable student profile form (Name, Degree, GPA, Scale, Year of Study, Graduation Year, Skills, Achievements) with live profile completeness confidence meter.
 - [x] **Clean competition-ready zero-state:** Removed all hardcoded mock data so the app initializes cleanly on Step 1 (Upload Documents) with zero prefilled data, giving judges an authentic first-time user experience.
 - [x] **Country-personalized discovery:** Implemented 8 distinct destinations (USA, Canada, UK, Germany, Australia, Netherlands, Singapore, Japan) with country cards, active counts, dynamic glow gradients, official government education guide links, and local currencies.
 - [x] **Scholarship discovery cards:** Displaying 26 curated, realistic scholarship opportunities with provider, destination, degree level, award, deadline with days-left countdown tag, official source link, and 3-state badges: `Eligible (✓)`, `Needs verification (🟡)`, or `Not eligible (✕)`.
@@ -8,5 +8,6 @@
 - [x] **AI Strategy Advisor & Guideline Lab:** Added intelligent gap diagnosis engine generating feasibility ratings, blocker breakdowns, tailored action steps, and regional alternative scholarships, plus an interactive raw PDF guideline parser laboratory.
 - [x] **Saved opportunities:** Added quick save/unsave toggle, dedicated shortlist tab, and nearest-deadline sorting (`Deadline soonest`).
 - [x] **Automated unit test suite:** Added comprehensive Vitest tests in `shared/eligibility.test.ts` verifying the rules engine, boundary conditions (GPA scales), and AI advisor (11/11 passing tests).
-- [x] **Hacktoberfest 2026 presentation:** Developed for the "Build for a Friend" challenge (friend story: Rahul Sharma, 3rd-year CS student). Created an in-app "How Open AI Powers This" architecture inspector modal, a zero-key configuration audit (`required_from_piyu.md`), and a complete ready-to-publish DEV.to submission draft (`SUBMISSION.md`).
+- [x] **Hacktoberfest 2026 presentation:** Developed for the "Build for a Friend" challenge (friend story: 3rd-year CS student). Created an in-app "How Open AI Powers This" architecture inspector modal, a zero-key configuration audit (`required_from_piyu.md`), and a complete ready-to-publish DEV.to submission draft (`SUBMISSION.md`).
+
 

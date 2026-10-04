@@ -1,13 +1,13 @@
 /**
- * Rahul's Sample Documents for 1-Click Demo Testing
+ * Sample Student Documents for 1-Click Demo Testing
  *
- * Modeled after our friend Rahul Sharma, a 3rd-year CS student at NITK
- * navigating obscure eligibility requirements for study-abroad master's scholarships.
+ * Modeled for an aspiring 3rd-year CS undergraduate navigating obscure
+ * eligibility requirements for study-abroad master's scholarships.
  */
 
-export const RAHUL_RESUME_TEXT = `RAHUL SHARMA
-Email: rahul.sharma.tech@gmail.com | Phone: +91 98765 43210 | Location: Bengaluru, India
-GitHub: github.com/rahulsharma-dev | LinkedIn: linkedin.com/in/rahulsharma-tech
+export const SAMPLE_RESUME_TEXT = `ALEX CHEN
+Email: alex.chen.cs@gmail.com | Phone: +91 98765 43210 | Location: Bengaluru, India
+GitHub: github.com/alexchen-dev | LinkedIn: linkedin.com/in/alexchen-tech
 
 EDUCATION
 National Institute of Technology Karnataka (NITK), Surathkal
@@ -34,9 +34,9 @@ ACTIVITIES & LEADERSHIP
 • Core Tech Lead, Open Source Student Club (conducted 4 workshops for 120+ freshmen).
 • Volunteer mentor for CodeForIndia community initiative.`;
 
-export const RAHUL_TRANSCRIPT_TEXT = `OFFICIAL ACADEMIC TRANSCRIPT (UNOFFICIAL STUDENT COPY)
+export const SAMPLE_TRANSCRIPT_TEXT = `OFFICIAL ACADEMIC TRANSCRIPT (UNOFFICIAL STUDENT COPY)
 NATIONAL INSTITUTE OF TECHNOLOGY KARNATAKA, SURATHKAL
-Student Name: Rahul Sharma
+Student Name: Alex Chen
 Roll Number: 231CS248
 Degree: Bachelor of Technology
 Discipline: Computer Science and Engineering
@@ -58,15 +58,15 @@ Medium of Instruction: English`;
 
 export const SAMPLE_DOCUMENTS = [
   {
-    name: "rahul_resume.pdf",
+    name: "sample_resume.pdf",
     type: "Resume / CV",
-    text: RAHUL_RESUME_TEXT,
+    text: SAMPLE_RESUME_TEXT,
     size: "142 KB",
   },
   {
     name: "transcript_sem5.pdf",
     type: "Official Transcript",
-    text: RAHUL_TRANSCRIPT_TEXT,
+    text: SAMPLE_TRANSCRIPT_TEXT,
     size: "218 KB",
   },
 ];

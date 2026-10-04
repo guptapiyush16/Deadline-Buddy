@@ -1,5 +1,5 @@
 ---
-title: Deadline Buddy — The Open-Source Scholarship Compass That Explains Every Match (Built for Rahul)
+title: Deadline Buddy — The Open-Source Scholarship Compass That Explains Every Match (Built for a Friend)
 published: false
 tags: devchallenge, weekendchallenge, hf26challenge
 ---
@@ -10,34 +10,34 @@ tags: devchallenge, weekendchallenge, hf26challenge
 
 ## What I Built
 
-### The Story: Building for My Friend Rahul
+### The Story: Building for a Friend
 
-My friend **Rahul Sharma** is a 3rd-year Computer Science undergraduate at NIT Karnataka, Surathkal in India. Like thousands of ambitious students around the world, his dream is to pursue a Master's degree abroad in AI and Distributed Systems. 
+My close friend is a 3rd-year Computer Science undergraduate at NIT Karnataka, Surathkal in India. Like thousands of ambitious students around the world, their dream is to pursue a Master's degree abroad in AI and Distributed Systems. 
 
-A few weeks ago, I watched him spend an entire Saturday afternoon buried under a mountain of browser tabs: **DAAD** in Germany, **EduCanada**, **Fulbright** in the US, and **Chevening** in the UK. Each scholarship program had 40- to 80-page PDF guidelines filled with dense institutional jargon:
+A few weeks ago, I watched them spend an entire Saturday afternoon buried under a mountain of browser tabs: **DAAD** in Germany, **EduCanada**, **Fulbright** in the US, and **Chevening** in the UK. Each scholarship program had 40- to 80-page PDF guidelines filled with dense institutional jargon:
 - *"Does a 4-year Indian B.Tech degree count as final-year standing right now?"*
 - *"Does an 8.4/10 CGPA meet the 'first-class honours or 2:1 equivalent' threshold?"*
 - *"Does a national hackathon finalist certificate satisfy 'demonstrated community leadership'?"*
 
-Existing scholarship portals were useless: they either acted as clickbait lead-generation farms or slapped an opaque *"87% Match"* badge on a card without telling him **why** he qualified, or worse, having him spend 15 hours drafting an application only to be rejected over a technical disqualifier on page 52.
+Existing scholarship portals were useless: they either acted as clickbait lead-generation farms or slapped an opaque *"87% Match"* badge on a card without telling them **why** they qualified, or worse, having them spend 15 hours drafting an application only to be rejected over a technical disqualifier on page 52.
 
-I built **Deadline Buddy** for Rahul.
+I built **Deadline Buddy** for my friend and students worldwide.
 
 ### What Deadline Buddy Does
 Deadline Buddy turns scholarship discovery into a transparent, stress-free 5-step loop:
-1. **Document Intake:** Rahul drops in his resume, unofficial transcript, and certificates (or clicks the 1-click sample button).
-2. **Editable Profile Extraction:** The system extracts his key attributes (GPA, current year, degree, field, graduation year, skills) into a structured profile that he can freely inspect and edit.
-3. **Destination Personalization:** He picks a target country (USA, Canada, UK, Germany, Australia, Netherlands, Singapore, Japan), immediately contextualizing currencies, deadlines, and official guides.
-4. **Deterministic Eligibility Matching:** Instead of letting an LLM guess eligibility, pure deterministic code evaluates published requirements against his profile, categorizing each award into **Eligible (✓)**, **Needs Verification (🟡)**, or **Not Eligible (✕)**.
+1. **Document Intake:** Students drop in their resume, unofficial transcript, and certificates (or click the 1-click sample button).
+2. **Editable Profile Extraction:** The system extracts key attributes (GPA, current year, degree, field, graduation year, skills) into a structured profile that they can freely inspect and edit.
+3. **Destination Personalization:** Pick a target country (USA, Canada, UK, Germany, Australia, Netherlands, Singapore, Japan), immediately contextualizing currencies, deadlines, and official guides.
+4. **Deterministic Eligibility Matching:** Instead of letting an LLM guess eligibility, pure deterministic code evaluates published requirements against the profile, categorizing each award into **Eligible (✓)**, **Needs Verification (🟡)**, or **Not Eligible (✕)**.
 5. **The Signature "Why?" Evidence Drawer & AI Strategy Advisor:** Clicking any status badge reveals a side-by-side trail: the exact published clause, the student's extracted evidence, the source document quote, a link to the official university source, and a 1-click **Open AI Strategy Advisor** generating actionable gap mitigation plans and alternative scholarships!
-6. **Deadline-First Shortlist:** Saved opportunities are prioritized by nearest deadline so he never misses an application window.
+6. **Deadline-First Shortlist:** Saved opportunities are prioritized by nearest deadline so students never miss an application window.
 
 ---
 
 ## Demo
 
 - **Interactive Local Demo:** `http://localhost:3000`
-- **1-Click Judge Walkthrough:** On the landing screen, click **`⚡ Load Rahul's Sample Documents`** to instantly populate Rahul's real-world academic profile and test the deterministic rules engine across 26 real scholarships.
+- **1-Click Judge Walkthrough:** On the landing screen, click **`⚡ Load Sample Student Documents`** to instantly populate a real-world academic profile and test the deterministic rules engine across 26 real scholarships.
 
 *(Insert deployed link / demo video GIF here)*
 
@@ -106,13 +106,13 @@ Duewise is built on a **defensible, split-brain architecture**:
 This project could not — and should not — be built using closed, black-box cloud APIs. Open innovation was essential for four reasons:
 
 ### 1. Data Sovereignty & Privacy of Sensitive Student Records
-Transcripts contain sensitive personal data: grades, birthdates, student identification numbers, and residential addresses. Forcing a student to upload their confidential academic transcripts to a closed commercial third-party server creates serious privacy and FERPA/GDPR compliance risks. By using open-weight models and client-side extraction (`pdfjs-dist` + local AST parsers), **Rahul's documents never leave his laptop**.
+Transcripts contain sensitive personal data: grades, birthdates, student identification numbers, and residential addresses. Forcing a student to upload their confidential academic transcripts to a closed commercial third-party server creates serious privacy and FERPA/GDPR compliance risks. By using open-weight models and client-side extraction (`pdfjs-dist` + local AST parsers), **student documents never leave their laptop**.
 
 ### 2. Zero-Cost Accessibility for Independent Students
 Commercial LLM APIs charge per token. A single student uploading three 10-page transcripts and a CV would burn hundreds of thousands of context tokens, making the tool prohibitively expensive to run at scale for students in developing nations. Open weights democratize access at zero marginal cost.
 
 ### 3. Open Requirements as Community Commons
-Every scholarship in Duewise is modeled as transparent code (`shared/requirements.ts`). Instead of proprietary scrapers, the requirements are open-source data that the community can audit, contribute to, and keep up to date for every Hacktoberfest cycle.
+Every scholarship in Deadline Buddy is modeled as transparent code (`shared/requirements.ts`). Instead of proprietary scrapers, the requirements are open-source data that the community can audit, contribute to, and keep up to date for every Hacktoberfest cycle.
 
 ### 4. Deterministic Explainability Beats "Trust Me" AI
 Closed AI products act as black boxes. By open-sourcing the deterministic rules engine, students can verify the exact logic that determined their qualification:
@@ -125,7 +125,7 @@ return check(req, "unknown", ...); // Refuse to guess borderline conversions!
 
 ---
 
-## What Rahul Said When He Tried It
+## What My Friend Said When They Tried It
 
 > *"I used to have four different spreadsheets trying to track what was due in November versus what I wasn't even allowed to apply for yet. Clicking the red 'Not eligible' badge on Vanier and seeing immediately that it was because I'm in Year 3 of a Bachelor's saved me about three days of writing an essay for something I couldn't win anyway. The 'Needs verification' badge on DAAD told me exactly what certificate I needed to ask my department head for."*
 

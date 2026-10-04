@@ -55,7 +55,7 @@ graph TD
 3. **Home Page State Initialization:**
    - [client/src/pages/Home.tsx](file:///d:/Projects/Deadlinne%20buddy/client/src/pages/Home.tsx) initializes:
      - `currentStep`: `"upload"` | `"profile"` | `"country"` | `"dashboard"`.
-     - `documents`: Initialized with Rahul's sample documents or user-uploaded files.
+     - `documents`: Initialized with sample student documents or user-uploaded files.
      - `profile`: Extracted student attributes (`StudentProfile`).
      - `evidenceList`: Document quotes supporting extracted fields (`Evidence[]`).
      - `selectedCountryKey`: Active destination (e.g. `"canada"`, `"germany"`, `"usa"`).
@@ -70,7 +70,7 @@ graph TD
 
 ### A. Document Intake & Profile Parsing Flow
 ```
-User drops files OR clicks "Load Rahul's Sample Documents"
+User drops files OR clicks "Load Sample Student Documents"
     │
     ├── Path 1: 1-Click Demo (handleLoadSample)
     │     └── Reads SAMPLE_DOCUMENTS from shared/sampleData.ts
