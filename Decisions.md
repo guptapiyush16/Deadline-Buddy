@@ -115,5 +115,15 @@ This document records the key architectural, technical, and UX design decisions 
   - Reviewers and judges can deploy the application to Vercel, Netlify, or Cloudflare Pages in one click directly from GitHub with zero environment variables needed.
   - Ensures 100% uptime with global edge CDN distribution, eliminating cold-boot delays or free-tier sleep cycles during evaluation.
 
+---
+
+## 13. Complete Anonymization of Demo Data and Personal Names
+- **Decision:** Removed all instances of personal friend names ("Rahul Sharma") from UI buttons, demo documents, test suites, and documentation, standardizing on a universal sample candidate persona ("Alex Chen" / "Sample Student") while keeping the authentic "Build for a Friend" challenge story.
+- **Reasoning:**
+  - Preserves student privacy on public open-source repositories and online submissions.
+  - Keeps the focus on the product experience and deterministic verification logic.
+  - Aligns with the Hacktoberfest prompt while ensuring the codebase is ready for public distribution.
+
+
 
 
